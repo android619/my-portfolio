@@ -1,3 +1,4 @@
+import icon from "./assets/projects/icons8-menu.svg";
 import React from "react";
 import { useState } from "react";
 
@@ -21,25 +22,34 @@ function App() {
       <header className="header">
         <a href="#" className="logo">
           <em className="Log">AM😎</em>
-        </a>
-        <input type="checkbox" id="check" />
-        <label htmlFor="check" className="checkbtn">
-          <i></i>
-        </label>
+        </a>{" "}
         <nav className="navbar">
+          <input type="checkbox" id="check" />
+          <label htmlFor="check" className="checkbtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24"
+              height="24"
+              viewBox="0 0 50 50"
+            >
+              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+            </svg>
+          </label>
           <ul>
-            <a className="navvi" href="#About">
+            <a className="navvi blo" href="#About">
               About
             </a>
-            <a className="navvi" href="#Service">
+            <a className="navvi blo" href="#Service">
               services
             </a>
 
-            <a className="navvi" href="#Portfolio">
+            <a className="navvi blo" href="#Portfolio">
               Portfolio
             </a>
 
-            <a className="btn " href="#Contact">
+            <a className="btn  " href="#Contact">
               Contact
             </a>
           </ul>
@@ -62,8 +72,8 @@ function Hero() {
         <h1>Abdullahi</h1>
         <h2>Frontend Web Developer</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quasi
-          soluta voluptas ducimus vel ex libero blanditiis natus doloribus atque
+          My name is Abdullahi Muhammad, I am a Frontend Web developer.
+          <br /> Check out my portfolio to see more..
         </p>
         <a className="btn-home" href="#Contact">
           Hire me
@@ -142,10 +152,15 @@ function Service() {
             <img src={html} alt="" />
             <h3>HTML</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              Hypertext Markup Language is the standard markup language for
+              documents designed to be displayed in a web browser. It defines
+              the content and structure of web content.
             </p>
-            <a className="btn-service" href="#">
+            <a
+              className="btn-service"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
@@ -153,10 +168,15 @@ function Service() {
             <img src={css} alt="" />
             <h3>CSS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              Cascading Style Sheets is a style sheet language used for
+              specifying the presentation and styling of a document written in a
+              markup language such as HTML or XML.
             </p>
-            <a className="btn-service" href="#">
+            <a
+              className="btn-service"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
@@ -164,10 +184,15 @@ function Service() {
             <img src={atoms} alt="" />
             <h3>REACT.JS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              React is a free and open-source front-end JavaScript library for
+              building user interfaces based on components by Facebook Inc. It
+              is maintained by Meta and a community of individual developers.
             </p>
-            <a className="btn-service" href="#">
+            <a
+              className="btn-service"
+              href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
@@ -175,10 +200,15 @@ function Service() {
             <img src={tailwind} alt="" />
             <h3>TAILWIND</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              Tailwind CSS is an open-source CSS framework. Unlike other
+              frameworks, like Bootstrap, it does not provide a series of
+              predefined classes for elements such as buttons or tables.
             </p>
-            <a className="btn-service" href="#">
+            <a
+              className="btn-service"
+              href="https://www.geeksforgeeks.org/introduction-to-tailwind-css/"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
@@ -186,10 +216,15 @@ function Service() {
             <img src={js} alt="" />
             <h3>JAVASCRIPT</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              JavaScript, often abbreviated as JS, is a programming language and
+              core technology of the Web, alongside HTML and CSS. 99% of
+              websites use JavaScript on the client side for webpage behavior.
             </p>
-            <a className="btn-service" href="#">
+            <a
+              className="btn-service"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
@@ -197,10 +232,15 @@ function Service() {
             <img src={nextjs} alt="" />
             <h3>NEXT.JS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              excepturi facilis.
+              Next.js is an open-source web development framework created by the
+              private company Vercel providing React-based web applications with
+              server-side rendering and static website generation.
             </p>
-            <a className="btn-service" href="#Services">
+            <a
+              className="btn-service"
+              href="https://nextjs.org/docs"
+              target="_blank"
+            >
               Learn More
             </a>
           </div>
