@@ -67,6 +67,13 @@ function App() {
 function Hero() {
   return (
     <section id="Hero" className="hero-section">
+      <div className="img-container">
+        <div className="img-box">
+          <div className="img">
+            <img src={Potrait} alt="" />
+          </div>
+        </div>
+      </div>
       <div className="home-container">
         <h3>Hello I am,</h3>
         <h1>Abdullahi</h1>
@@ -78,13 +85,6 @@ function Hero() {
         <a className="btn-home" href="#Contact">
           Hire me
         </a>
-      </div>
-      <div className="img-container">
-        <div className="img-box">
-          <div className="img">
-            <img src={Potrait} alt="" />
-          </div>
-        </div>
       </div>
     </section>
   );
