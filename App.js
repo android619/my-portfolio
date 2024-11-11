@@ -24,7 +24,7 @@ function App() {
           <em className="Log">AM😎</em>
         </a>{" "}
         <nav className="navbar">
-          <input type="checkbox" id="check" />
+          <input defaultChecked="none" type="checkbox" id="check" />
           <label htmlFor="check" className="checkbtn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ function App() {
               Portfolio
             </a>
 
-            <a className="btn  " href="#Contact">
+            <a className="btn" href="#Contact">
               Contact
             </a>
           </ul>
@@ -64,6 +64,7 @@ function App() {
     </div>
   );
 }
+
 function Hero() {
   return (
     <section id="Hero" className="hero-section">
